@@ -169,8 +169,8 @@
  *
  * 14. Components:
  *       a. Prim's uses a min-heap of edge weights
- *       b. Kruskal's uses sets of vertices, but processes edge 
- *          weights in ascending sorted order which COULD use a min-heap.
+ *       b. Kruskal's uses sets of vertices, and processes edges in
+            ascending order. It typically does not use a heap.
  *       c. Both sort of do this. Prim's adds edges to a heap as
  *          it encounters them and will process the smallest edges
  *          on the heap in order. This can lead to the node/edge 
