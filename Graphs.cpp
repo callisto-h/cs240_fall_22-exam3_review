@@ -91,7 +91,7 @@
  * 
  * ANSWERS:
  * 7. Structures:
- *      a. Dijsktra's : min-Heap of vertex distances
+ *      a. Dijsktra's : min-Heap of path distances
  *      b. BFS : Queue for building "frontier" of nodes
  *      c. Kruskal's : It CAN have a min-Heap of edge weights
  *      d. DFS : Stack for processing nodes
