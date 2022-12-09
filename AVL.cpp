@@ -53,6 +53,8 @@
 * 6. Describe the AVL-removal operation. What is it's
 *    runtime complexity, and why?
 *
+* 7. What kind of information is stored in a given AVL node?
+*
 * ANSWERS:
 * 
 * 1. Since an AVL tree is guaranteed to be balanced, 
@@ -96,6 +98,11 @@
 *    the value [O(logn)], removes it [O(1)], 
 *    and traverses back up the tree to rebalance it 
 *    [O(logn)]. Therefore it is O(logn).
-
+*
+* 7. Info:
+*    a. Data
+*    b. Balance factor
+*    c. Child pointers
+*    d. **Parent pointer**
 
 */
