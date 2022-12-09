@@ -143,6 +143,8 @@
  *       a. Uses a min-heap of edge weights
  *       b. Uses sets of connected/disconnected vertices
  *       c. Jumps around the graph in order of edge weight
+ *
+ * 15. How are Prim's and Djikstra's similar? How are they different?
  * 
  * ANSWERS:
  * 10. In BFS we add all adjacent nodes that *haven't been encountered yet*
@@ -170,7 +172,7 @@
  * 14. Components:
  *       a. Prim's uses a min-heap of edge weights
  *       b. Kruskal's uses sets of vertices, and processes edges in
-            ascending order. It typically does not use a heap.
+ *          ascending order. It typically does not use a heap.
  *       c. Both sort of do this. Prim's adds edges to a heap as
  *          it encounters them and will process the smallest edges
  *          on the heap in order. This can lead to the node/edge 
@@ -180,4 +182,9 @@
  *          of where they are in the graph. This can lead to
  *          lots of "jumping around".
  * 
+ * 15. Prim's and Dijkstra's both utilize a priority queue (min heap)
+ *     to keep track of a "smallest" element. Prim's queue stores edge
+ *     weights, where Dijkstra's stores shortest path distances. Additionally,
+ *     Prim's generates a MST where Dijsktra's generates the shortest paths
+ *     from a given source node, which is not guaranteed to be a MST!
  */
